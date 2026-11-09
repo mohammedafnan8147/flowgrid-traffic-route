@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: flowgrid-traffic-route
+    runtime: python
+    plan: free
+    buildCommand: python -c "import zipfile; zipfile.ZipFile('flowgrid-source.zip').extractall('.')" && python -m compileall -q backend
+    startCommand: python backend/run.py
+    healthCheckPath: /api/health
+    autoDeployTrigger: 'off'
+    envVars:
+      - key: FLOWGRID_HOST
+        value: 0.0.0.0

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <title>FlowGrid — Open Traffic Route Intelligence</title>
+  <style>
+    :root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 28px; color: #e8eef8; background: radial-gradient(ellipse at 50% 0%, #14264a 0%, #0b1220 56%); }
+    main { width: min(100%, 720px); padding: clamp(28px, 6vw, 56px); border: 1px solid #29364c; border-radius: 22px; background: rgba(15, 24, 40, .94); box-shadow: 0 24px 80px #02061780; }
+    .mark { display: inline-flex; align-items: center; gap: 10px; color: #a9bad4; font-size: 13px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; background: #48e0ad; box-shadow: 0 0 18px #48e0ad88; }
+    h1 { margin: 28px 0 10px; font-size: clamp(38px, 8vw, 64px); letter-spacing: -.055em; line-height: 1; }
+    p { color: #a9b7cc; line-height: 1.65; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 28px 0; }
+    a { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 18px; border-radius: 10px; color: #07131a; background: #48e0ad; font-weight: 750; text-decoration: none; }
+    a.secondary { color: #dce7f6; background: #202d42; border: 1px solid #34435c; }
+    section { margin-top: 28px; padding: 18px 20px; border: 1px solid #29364c; border-radius: 12px; background: #111d30; }
+    h2 { margin: 0 0 8px; font-size: 15px; }
+    ol { margin: 8px 0 0; padding-left: 21px; color: #a9b7cc; line-height: 1.8; }
+    code { color: #b7f3df; }
+    footer { margin-top: 24px; color: #74839a; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark"><span class="dot"></span> FlowGrid</div>
+    <h1>Traffic route intelligence</h1>
+    <p>Explore the road network, compare route algorithms, and inspect simulated congestion and route decisions.</p>
+    <div class="actions">
+      <a href="http://127.0.0.1:8787/">Open FlowGrid</a>
+      <a class="secondary" href="README.md">Project guide</a>
+    </div>
+    <section>
+      <h2>Starting FlowGrid on this computer</h2>
+      <ol>
+        <li>Open the project folder in File Explorer.</li>
+        <li>Double-click <code>run.cmd</code> and leave its window open.</li>
+        <li>Use <strong>Open FlowGrid</strong> above, or let the launcher open it automatically.</li>
+      </ol>
+    </section>
+    <footer>Local demo · Simulation data only, not live traffic</footer>
+  </main>
+</body>
+</html>

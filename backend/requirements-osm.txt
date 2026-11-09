@@ -1,0 +1,5 @@
+# Optional OpenStreetMap import adapter.
+# These packages are intentionally not required for the synthetic demo.
+osmnx==2.0.0
+networkx==3.4.2
+geopandas>=1.0
